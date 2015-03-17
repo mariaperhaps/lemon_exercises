@@ -7,8 +7,13 @@
 //From Sublime in the index.html file ctrl-click inside the file. A menu will pop up and you should have the option to "Open in Browser." Select that one. The file should open up in the browser. It will look like a blank white page. This is good.
 
 //While in Chrome, hit option-command-j. The console should pop up. Here are your Chrome Developer Tools! Let's click on the tab that says 'Console.' In here we can write Javascript, we can try things out, play around and get some really useful messages. Anything we console.log will show up here. If you js file was linked correctly in the html, you should see the word 'linked'. Does everyone see this? Now we're set up to go.
+//Just for go to our awesome MDN docs:
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript
+//open up the console. cool ascii art. Fun messages :)
 
-//Let's define a few variable and assign them to strings.
+
+
+//Now, back in our burgerLet's define a few variable and assign them to strings.
 
 var burgerMenu = "Hamburger, Cheeseburger, Veggieburger"
 var hamBurger = "Bison, Beef, Ostrich"
@@ -21,10 +26,10 @@ var veggieBurger = "Tofu, Seitan, Bean"
 //Type prompt("What is Your Name?") -- prints out name. But wait I have no way to grab that. It's escaped. Perhaps we should trap it in a variable.
 
 //Now, try to write some code in our burger program that will prompt the user to choose a burger from the burgerMenu. Hint: use your powers of string concatenation to display the menu in your prompt.
-//Trap their answer and console log it with a friendly message such as: "Good Choice! You chose " + choice
+//Trap their answer and console log it with a friendly message such as: "Good Choice! You chose hamburger"
 
-// var selection = prompt("Please choose Burger from the following menu: " + burgerMenu)
-// console.log("Good Choice! You chose " + selection)
+var selection = prompt("Please choose Burger from the following menu: " + burgerMenu)
+console.log("Good Choice! You chose " + selection)
 
 
 //But wait, maybe we don't want to log to console. Perhaps we want some other kind of visual feedback. Let's write an alert. Try it in console first.
@@ -48,13 +53,17 @@ if(selection === "Hamburger"){
   alert("You've selected " + selection + " with " + protein);
 }
 
+//Exercise - Go to the MDN docs and look you the following methods: .split, .toLowerCase, toUpperCase, .repeat. Play with it and figure out how it works, and then we'll have people explain what each one does.
 
-//Now let's explain a clever string method called search. Let's play around in the console first.
-//We'll called .search on with a string to look for within the larger string.
-//var string = "Hello, my name is Maria"
-//string.search("Maria") ---> It returns 18. 18 is the index it appears at. Let's try searching for something that's not
 
-//Search to see if a protein is available. If it's not available, alert the user.
+// Now let's explain a clever string method called search. Let's play around in the console first.
+// We'll called .search on with a string to look for within the larger string.
+// var string = "Hello, my name is Maria"
+// string.search("Maria") ---> It returns 18. 18 is the index it appears at. Let's try searching for something that's not in the string. string.search("Craword")It returns -1. Keep that in your back pocket.
+
+
+
+//Write a program that first takes input from the user about what type of burger they would like and then searches to see if a protein is available for that burger. If it's not available, alert the user. If it is available, alert the user that they are in luck.
 
 var burger = prompt("Choose a burger to search " + burgerMenu);
 
