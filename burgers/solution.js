@@ -13,7 +13,7 @@
 
 
 
-//Now, back in our burgerLet's define a few variable and assign them to strings.
+//Now, back in our burger.js, Let's define a few variable and assign them to strings.
 
 var burgerMenu = "Hamburger, Cheeseburger, Veggieburger"
 var hamBurger = "Bison, Beef, Ostrich"
@@ -53,6 +53,7 @@ if(selection === "Hamburger"){
   alert("You've selected " + selection + " with " + protein);
 }
 
+
 //Exercise - Go to the MDN docs and look you the following methods: .split, .toLowerCase, toUpperCase, .repeat. Play with it and figure out how it works, and then we'll have people explain what each one does.
 
 
@@ -63,7 +64,7 @@ if(selection === "Hamburger"){
 
 
 
-//Write a program that first takes input from the user about what type of burger they would like and then searches to see if a protein is available for that burger. If it's not available, alert the user. If it is available, alert the user that they are in luck.
+//Write a program that first takes input from the user about what type of burger they would like and (based on that) the type of (meat, cheese, or protein) they crave. Then search to see if a protein is available for that burger. If it's not available, alert the user that it is not available. If it is available, alert the user that they are in luck. Hint: you may need some nested if statements.
 
 var burger = prompt("Choose a burger to search " + burgerMenu);
 
