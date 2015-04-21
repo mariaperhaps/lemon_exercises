@@ -2,7 +2,8 @@
 
 ####Display
 
-**Block** - A block-level element starts on a new line and stretches out to the left and right as far as it can.
+**Block** - A block-level element starts on a new line and stretches out to the left and right as far as it can. A block-level element occupies the entire space of its parent element (container), thereby creating a "block."
+Browsers typically display the block-level element with a newline both before and after the element.
 e.g. ``div``, ``p``, ``form``
 
 ``` html
