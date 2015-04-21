@@ -1,0 +1,106 @@
+*{
+ /* border: solid 1px black;*/
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+}
+
+p{
+  margin:0;
+}
+
+.main{
+  width: 600px;
+  height: 100px;
+  background-color: purple;
+  margin: 0 auto;
+}
+
+.width1 {
+  width: 500px;
+  margin: 20px auto;
+}
+
+.width2 {
+  width: 500px;
+  margin: 20px auto;
+  padding: 50px;
+  border-width: 10px;
+}
+
+.static{
+  position: static;
+}
+
+.relative1 {
+  position: relative;
+  background-color: thistle;
+}
+
+.relative2 {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  width: 500px;
+  background-color: aqua;
+}
+
+.fixed {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: green;
+}
+
+.relative3 {
+  position: relative;
+  top: 50px;
+  width: 600px;
+  height: 400px;
+  background-color: blue;
+}
+
+.absolute {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+  background-color: red;
+}
+
+.container {
+  position: relative;
+  border: 2px solid aqua;
+}
+
+nav {
+  position: absolute;
+  left: 0px;
+  width: 200px;
+  background-color: purple;
+}
+section {
+  /* position is static by default */
+  margin-left: 200px;
+  background-color: blue;
+  border: 2px solid red;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: yellow;
+  width: 100%;
+}
+
+.box{
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  border: 1px solid purple;
+}
